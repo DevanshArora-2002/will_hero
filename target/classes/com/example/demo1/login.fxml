@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.Game">
+   <children>
+      <ImageView fitHeight="704.0" fitWidth="704.0" layoutX="-2.0" layoutY="-4.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-2.0" AnchorPane.rightAnchor="-2.0" AnchorPane.topAnchor="-4.0">
+         <image>
+            <Image url="@background_images/black_background.png" />
+         </image>
+      </ImageView>
+      <VBox fx:id="submit" layoutX="50.0" layoutY="182.0" onMouseClicked="#On_first_page" prefHeight="250.0" prefWidth="600.0">
+         <children>
+            <Text fill="#f8f6f6" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Player name" translateX="100.0" wrappingWidth="402.21630859375">
+               <font>
+                  <Font size="28.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+            </Text>
+            <TextField fx:id="player_name" layoutX="100.0" prefHeight="37.0" prefWidth="426.0" promptText="Username">
+               <VBox.margin>
+                  <Insets bottom="25.0" left="100.0" right="200.0" top="25.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <ImageView fitHeight="33.0" fitWidth="113.0" translateX="175.0" translateY="25.0">
+               <image>
+                  <Image url="@background_images/submit.png" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+      <Text fill="#f5f3f3" layoutX="131.0" layoutY="5.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login Page" translateX="70.0" translateY="125.0" wrappingWidth="305.4217529296875">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Text>
+      <Text fx:id="prompt" fill="#e40b0b" layoutX="-12.0" layoutY="505.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="600.0">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
